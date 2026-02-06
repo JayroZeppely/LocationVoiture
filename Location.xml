@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE diagram PUBLIC "QOC DTD"
+                         "Qoc.dtd">
+<diagram>
+    <sessions>
+        <session id="s1" date="2026/1/6/14/16/7">
+            <maker author="a1"/>
+            <maker author="a2"/>
+            <maker author="a3"/>
+        </session>
+    </sessions>
+    <nodes>
+        <node>
+            <question id="q1"/>
+        </node>
+        <position id="p1" idref="q1"/>
+    </nodes>
+    <links/>
+    <authors>
+        <author id="a1" name="Quentin"/>
+        <author id="a2" name="Alexis"/>
+        <author id="a3" name="Hala"/>
+    </authors>
+</diagram>
