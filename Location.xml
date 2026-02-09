@@ -3,10 +3,15 @@
                          "Qoc.dtd">
 <diagram>
     <sessions>
+        <session id="s3" date="2026/1/9/13/18/49">
+            <maker author="a1"/>
+            <maker author="a2"/>
+            <decider author="a3"/>
+        </session>
         <session id="s2" date="2026/1/7/7/54/59">
             <maker author="a1"/>
             <maker author="a2"/>
-            <maker author="a3"/>
+            <decider author="a3"/>
         </session>
         <session id="s1" date="2026/1/6/14/16/7">
             <maker author="a1"/>
@@ -20,168 +25,322 @@
             <question id="q2"/>
             <question id="q3">
                 <itemQuestion
+                    label="Quelles informations peut-on renseigner avant de lancer une recherche ?" session="s3"/>
+                <itemQuestion
                     label="Quelles informations peut-on renseigner avant de lancer une recherche ?" session="s2"/>
             </question>
             <question id="q4">
+                <itemQuestion label="Comment représenter les annonces" session="s3"/>
                 <itemQuestion label="Comment représenter les annonces" session="s2"/>
             </question>
             <question id="q5">
                 <itemQuestion
+                    label="Est-ce que des paramètres de recherche doivent être sélectionnés par défaut ?" session="s3"/>
+                <itemQuestion
                     label="Est-ce que des paramètres de recherche doivent être sélectionnés par défaut ?" session="s2"/>
             </question>
             <question id="q6">
+                <itemQuestion
+                    label="Quelles informations sont dispensé sur les annonces ?" session="s3"/>
                 <itemQuestion
                     label="Quelles informations sont dispensé sur les annonces ?" session="s2"/>
             </question>
             <question id="q7"/>
             <question id="q8">
                 <itemQuestion
+                    label="Comment choisir trouver une annonce spécifique ?" session="s3"/>
+                <itemQuestion
                     label="Comment choisir trouver une annonce spécifique ?" session="s2"/>
             </question>
             <question id="q9">
                 <itemQuestion
+                    label="Comment lancer une recherche de location ?" session="s3"/>
+                <itemQuestion
                     label="Comment lancer une recherche de location ?" session="s2"/>
+            </question>
+            <question id="q10">
+                <itemQuestion
+                    label="Une fois la recherche lancée, peux-t-on la modifier dynamiquement ?" session="s3"/>
+            </question>
+            <question id="q11">
+                <itemQuestion
+                    label="Est-ce pertinent d'avoir un système de compte utilisateur ?" session="s3"/>
+            </question>
+            <question id="q12">
+                <itemQuestion
+                    label="Est-ce pertinent d'avoir des types d'utilisateur (Particulier, professionnel) ?"
+                    additionalInfo="" seeheim="Not selected" session="s3"/>
+            </question>
+            <question id="q13">
+                <itemQuestion
+                    label="Est-ce que cela est nécéssaire pour choisir une annonce ?" session="s3"/>
+            </question>
+            <question id="q14">
+                <itemQuestion
+                    label="Quelles informations l'utilisateur doit renseigner" session="s3"/>
             </question>
             <option id="o1"/>
             <option id="o2"/>
             <option id="o3">
+                <itemOption label="Aucune information nécéssaire" session="s3"/>
                 <itemOption label="Aucune information nécéssaire" session="s2"/>
             </option>
             <option id="o4">
+                <itemOption label="L'adresse de récupération" session="s3"/>
                 <itemOption label="L'adresse de récupération" session="s2"/>
             </option>
             <option id="o5">
                 <itemOption
+                    label="Adresse récupération, de retour, début et fin de location" session="s3"/>
+                <itemOption
                     label="Adresse récupération, de retour, début et fin de location" session="s2"/>
             </option>
             <option id="o6">
+                <itemOption label="Sous forme de liste" session="s3"/>
                 <itemOption label="Sous forme de liste" session="s2"/>
             </option>
             <option id="o7">
+                <itemOption label="Via une carte interactive" session="s3"/>
                 <itemOption label="Via une carte interactive" session="s2"/>
             </option>
             <option id="o8">
+                <itemOption label="Aucune" session="s3"/>
                 <itemOption label="Aucune" session="s2"/>
             </option>
             <option id="o9">
+                <itemOption label="Au moins un lieu de location" session="s3"/>
                 <itemOption label="Au moins un lieu de location" session="s2"/>
             </option>
             <option id="o10">
+                <itemOption label="Le lieu et les dates de location" session="s3"/>
                 <itemOption label="Le lieu et les dates de location" session="s2"/>
             </option>
             <option id="o11">
+                <itemOption label="Nom du véhicule (marque, année)" session="s3"/>
                 <itemOption label="Nom du véhicule, photo, prix" session="s2"/>
             </option>
             <option id="o12">
                 <itemOption
+                    label="L'adresses, dates de location, type de véhicule, nb places, Options dans le véhicules..." session="s3"/>
+                <itemOption
                     label="L'adresses, dates de location, type de véhicule, nb places, Options dans le véhicules..." session="s2"/>
             </option>
             <option id="o13">
+                <itemOption label="Photo" session="s3"/>
                 <itemOption
                     label="Nom, photo, prix, caractéristique du véhicules (nbplaces, kilomètrages, options...), " session="s2"/>
             </option>
+            <option id="o14">
+                <itemOption label="Oui" session="s3"/>
+            </option>
+            <option id="o15">
+                <itemOption label="Non" session="s3"/>
+            </option>
+            <option id="o16">
+                <itemOption label="Oui" session="s3"/>
+            </option>
+            <option id="o17">
+                <itemOption label="Non" session="s3"/>
+            </option>
+            <option id="o18">
+                <itemOption label="Oui" session="s3"/>
+            </option>
+            <option id="o19">
+                <itemOption label="Photo" session="s3"/>
+            </option>
+            <option id="o20">
+                <itemOption label="Score" session="s3"/>
+            </option>
+            <option id="o21">
+                <itemOption label="Aucune" session="s3"/>
+            </option>
+            <option id="o22">
+                <itemOption label="Nom, prénom" session="s3"/>
+            </option>
+            <option id="o23">
+                <itemOption label="Non" session="s3"/>
+            </option>
+            <option id="o24">
+                <itemOption label="Permis de conduire" session="s3"/>
+            </option>
+            <option id="o25">
+                <itemOption label="Score des utilisateurs + nbAvis" session="s3"/>
+            </option>
+            <option id="o26">
+                <itemOption label="Caractéristique du véhicule" session="s3"/>
+            </option>
             <criteria id="c1">
+                <itemCriteria label="Action minimale" weight="3" session="s3"/>
                 <itemCriteria label="Action minimale" weight="3" session="s2"/>
             </criteria>
             <criteria id="c2">
+                <itemCriteria label="Pertinence des résultats"
+                    weight="3" session="s3"/>
                 <itemCriteria label="Précision de la recherche"
                     weight="3" session="s2"/>
             </criteria>
             <criteria id="c3">
                 <itemCriteria label="Nb_informations_renseignés"
+                    weight="3" session="s3"/>
+                <itemCriteria label="Nb_informations_renseignés"
                     weight="3" session="s2"/>
             </criteria>
+            <criteria id="c4">
+                <itemCriteria
+                    label="Temps de remplissage de la recherche"
+                    weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c5">
+                <itemCriteria label="Observation" weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c6">
+                <itemCriteria label="Facilement modifiable" weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c7">
+                <itemCriteria label="Accès aux données de l'utilisateur"
+                    weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c8">
+                <itemCriteria label="OverWiew first" weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c9"/>
+            <criteria id="c10">
+                <itemCriteria label="L'utilisateur sait conduire"
+                    weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c11">
+                <itemCriteria label="Variabilité des offres" weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c12">
+                <itemCriteria label="Confiance des utilisateur"
+                    weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c13"/>
+            <criteria id="c14"/>
+            <criteria id="c15">
+                <itemCriteria
+                    label="Le loueur est facilement identifiable"
+                    weight="3" session="s3"/>
+            </criteria>
+            <criteria id="c16"/>
             <scenario id="e1">
+                <itemScenario label="Scénario 1" session="s3"/>
                 <itemScenario label="Scénario 1" session="s2"/>
             </scenario>
             <scenario id="e2">
+                <itemScenario label="Scénario 2" session="s3"/>
                 <itemScenario label="Scénario 2" session="s2"/>
             </scenario>
+            <argument id="g1"/>
             <factor id="f1"/>
             <factor id="f2"/>
             <factor id="f3">
+                <itemFactor label="usability" weight="3" session="s3"/>
                 <itemFactor label="usability" weight="3" session="s2"/>
                 <itemFactor label="usability" weight="3" session="s1"/>
             </factor>
             <factor id="f4">
+                <itemFactor label="Efficiency" weight="3" session="s3"/>
                 <itemFactor label="Efficiency" weight="3" session="s2"/>
                 <itemFactor label="Efficiency" weight="3" session="s1"/>
             </factor>
             <factor id="f5">
+                <itemFactor label="Effectiveness" weight="3" session="s3"/>
                 <itemFactor label="Effectiveness" weight="3" session="s2"/>
                 <itemFactor label="Effectiveness" weight="3" session="s1"/>
             </factor>
             <factor id="f6">
+                <itemFactor label="Satisfaction" weight="3" session="s3"/>
                 <itemFactor label="Satisfaction" weight="3" session="s2"/>
                 <itemFactor label="Satisfaction" weight="3" session="s1"/>
             </factor>
             <factor id="f7">
+                <itemFactor label="Learnability" weight="3" session="s3"/>
                 <itemFactor label="Learnability" weight="3" session="s2"/>
                 <itemFactor label="Learnability" weight="3" session="s1"/>
             </factor>
             <factor id="f8">
+                <itemFactor label="accessibility" weight="3" session="s3"/>
                 <itemFactor label="accessibility" weight="3" session="s2"/>
                 <itemFactor label="accessibility" weight="3" session="s1"/>
             </factor>
             <factor id="f9">
+                <itemFactor label="User Exp" weight="3" session="s3"/>
                 <itemFactor label="User Exp" weight="3" session="s2"/>
                 <itemFactor label="User Exp" weight="3" session="s1"/>
             </factor>
             <factor id="f10">
+                <itemFactor label="Social Connectiveness" weight="3" session="s3"/>
                 <itemFactor label="Social Connectiveness" weight="3" session="s2"/>
                 <itemFactor label="Social Connectiveness" weight="3" session="s1"/>
             </factor>
             <factor id="f11">
+                <itemFactor label="Stimulation" weight="3" session="s3"/>
                 <itemFactor label="Stimulation" weight="3" session="s2"/>
                 <itemFactor label="Stimulation" weight="3" session="s1"/>
             </factor>
             <factor id="f12">
+                <itemFactor label="Esthetic" weight="3" session="s3"/>
                 <itemFactor label="Esthetic" weight="3" session="s2"/>
                 <itemFactor label="Esthetic" weight="3" session="s1"/>
             </factor>
             <factor id="f13">
+                <itemFactor label="Meaning &amp; value" weight="3" session="s3"/>
                 <itemFactor label="Meaning &amp; value" weight="3" session="s2"/>
                 <itemFactor label="Meaning &amp; value" weight="3" session="s1"/>
             </factor>
             <factor id="f14">
+                <itemFactor label="Emotion" weight="3" session="s3"/>
                 <itemFactor label="Emotion" weight="3" session="s2"/>
                 <itemFactor label="Emotion" weight="3" session="s1"/>
             </factor>
             <factor id="f15">
+                <itemFactor label="Identification" weight="3" session="s3"/>
                 <itemFactor label="Identification" weight="3" session="s2"/>
                 <itemFactor label="Identification" weight="3" session="s1"/>
             </factor>
             <factor id="f16">
+                <itemFactor label="Dependability" weight="3" session="s3"/>
                 <itemFactor label="Dependability" weight="3" session="s2"/>
                 <itemFactor label="Dependability" weight="3" session="s1"/>
             </factor>
             <factor id="f17">
+                <itemFactor label="Security" weight="3" session="s3"/>
                 <itemFactor label="Security" weight="3" session="s2"/>
                 <itemFactor label="Security" weight="3" session="s1"/>
             </factor>
             <factor id="f18">
+                <itemFactor label="Confidentiality" weight="3" session="s3"/>
                 <itemFactor label="Confidentiality" weight="3" session="s2"/>
                 <itemFactor label="Confidentiality" weight="3" session="s1"/>
             </factor>
             <factor id="f19">
+                <itemFactor label="Integrity" weight="3" session="s3"/>
                 <itemFactor label="Integrity" weight="3" session="s2"/>
                 <itemFactor label="Integrity" weight="3" session="s1"/>
             </factor>
             <factor id="f20">
+                <itemFactor label="Reliability" weight="3" session="s3"/>
                 <itemFactor label="Reliability" weight="3" session="s2"/>
                 <itemFactor label="Reliability" weight="3" session="s1"/>
             </factor>
             <factor id="f21">
+                <itemFactor label="Availability" weight="3" session="s3"/>
                 <itemFactor label="Availability" weight="3" session="s2"/>
                 <itemFactor label="Availability" weight="3" session="s1"/>
             </factor>
             <factor id="f22">
+                <itemFactor label="Maintainability" weight="3" session="s3"/>
                 <itemFactor label="Maintainability" weight="3" session="s2"/>
                 <itemFactor label="Maintainability" weight="3" session="s1"/>
             </factor>
             <factor id="f23">
+                <itemFactor label="Safety" weight="3" session="s3"/>
                 <itemFactor label="Safety" weight="3" session="s2"/>
                 <itemFactor label="Safety" weight="3" session="s1"/>
+            </factor>
+            <factor id="f24">
+                <itemFactor label="Biais cognitive" weight="3" session="s3"/>
             </factor>
         </node>
         <position id="p1" idref="q1"/>
@@ -189,11 +348,15 @@
         <position id="p3" idref="f2"/>
         <position id="p4" idref="f3">
             <itemPosition posX="1600" posY="247" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1600" posY="247" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1600" posY="247" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p5" idref="f4">
+            <itemPosition posX="1350" posY="82" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="82" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="82" width="60" height="60"
@@ -201,11 +364,15 @@
         </position>
         <position id="p6" idref="f5">
             <itemPosition posX="1350" posY="202" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="202" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="202" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p7" idref="f6">
+            <itemPosition posX="1350" posY="326" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="326" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="326" width="60" height="60"
@@ -213,11 +380,15 @@
         </position>
         <position id="p8" idref="f7">
             <itemPosition posX="1350" posY="406" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="406" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="406" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p9" idref="f8">
+            <itemPosition posX="1350" posY="500" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="500" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="500" width="60" height="60"
@@ -225,11 +396,15 @@
         </position>
         <position id="p10" idref="f9">
             <itemPosition posX="1600" posY="796" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1600" posY="796" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1600" posY="796" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p11" idref="f10">
+            <itemPosition posX="1350" posY="611" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="611" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="611" width="60" height="60"
@@ -237,11 +412,15 @@
         </position>
         <position id="p12" idref="f11">
             <itemPosition posX="1350" posY="692" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="692" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="692" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p13" idref="f12">
+            <itemPosition posX="1350" posY="770" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="770" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="770" width="60" height="60"
@@ -249,11 +428,15 @@
         </position>
         <position id="p14" idref="f13">
             <itemPosition posX="1350" posY="840" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="840" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="840" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p15" idref="f14">
+            <itemPosition posX="1350" posY="905" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="905" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="905" width="60" height="60"
@@ -261,11 +444,15 @@
         </position>
         <position id="p16" idref="f15">
             <itemPosition posX="1350" posY="973" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="973" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="973" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p17" idref="f16">
+            <itemPosition posX="1600" posY="1373" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1600" posY="1373" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1600" posY="1373" width="60" height="60"
@@ -273,11 +460,15 @@
         </position>
         <position id="p18" idref="f17">
             <itemPosition posX="1600" posY="1229" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1600" posY="1229" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1600" posY="1229" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p19" idref="f18">
+            <itemPosition posX="1350" posY="1159" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="1159" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="1159" width="60" height="60"
@@ -285,11 +476,15 @@
         </position>
         <position id="p20" idref="f19">
             <itemPosition posX="1350" posY="1234" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="1234" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="1234" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p21" idref="f20">
+            <itemPosition posX="1350" posY="1485" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="1485" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="1485" width="60" height="60"
@@ -297,17 +492,23 @@
         </position>
         <position id="p22" idref="f21">
             <itemPosition posX="1350" posY="1311" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="1311" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="1311" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p23" idref="f22">
             <itemPosition posX="1350" posY="1406" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="1350" posY="1406" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="1406" width="60" height="60"
                 session="s1" selected="false"/>
         </position>
         <position id="p24" idref="f23">
+            <itemPosition posX="1350" posY="1577" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="1350" posY="1577" width="60" height="60"
                 session="s2" selected="false"/>
             <itemPosition posX="1350" posY="1577" width="60" height="60"
@@ -318,206 +519,402 @@
         <position id="p27" idref="o2"/>
         <position id="p28" idref="q3">
             <itemPosition posX="340" posY="435" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="340" posY="435" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p29" idref="o3">
+            <itemPosition posX="540" posY="300" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="540" posY="300" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p30" idref="o4">
             <itemPosition posX="540" posY="401" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="540" posY="401" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p31" idref="o5">
             <itemPosition posX="540" posY="492" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="540" posY="492" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p32" idref="q4">
+            <itemPosition posX="340" posY="1144" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="340" posY="1114" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p33" idref="o6">
+            <itemPosition posX="540" posY="1183" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="540" posY="1154" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p34" idref="o7">
+            <itemPosition posX="540" posY="1089" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="540" posY="1045" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p35" idref="q5">
             <itemPosition posX="340" posY="757" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="340" posY="757" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p36" idref="o8">
+            <itemPosition posX="540" posY="684" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="540" posY="684" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p37" idref="o9">
             <itemPosition posX="540" posY="782" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="540" posY="782" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p38" idref="o10">
             <itemPosition posX="540" posY="888" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="540" posY="888" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p39" idref="q6">
+            <itemPosition posX="340" posY="1383" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="340" posY="1414" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p40" idref="o11">
+            <itemPosition posX="540" posY="1268" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="540" posY="1328" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p41" idref="o12">
             <itemPosition posX="540" posY="584" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="540" posY="584" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p42" idref="o13">
+            <itemPosition posX="540" posY="1336" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="540" posY="1487" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p43" idref="q7"/>
         <position id="p44" idref="c1">
             <itemPosition posX="883" posY="422" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="883" posY="422" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p45" idref="c2">
+            <itemPosition posX="884" posY="307" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="884" posY="292" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p46" idref="e1">
+            <itemPosition posX="29" posY="699" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="44" posY="699" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p47" idref="e2">
             <itemPosition posX="38" posY="895" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="38" posY="895" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p48" idref="c3">
+            <itemPosition posX="891" posY="536" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="891" posY="536" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p49" idref="q8">
             <itemPosition posX="183" posY="1273" width="60" height="60"
+                session="s3" selected="false"/>
+            <itemPosition posX="183" posY="1273" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
         <position id="p50" idref="q9">
+            <itemPosition posX="172" posY="611" width="60" height="60"
+                session="s3" selected="false"/>
             <itemPosition posX="203" posY="611" width="60" height="60"
                 session="s2" selected="false"/>
         </position>
+        <position id="p51" idref="q10">
+            <itemPosition posX="221" posY="2353" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p52" idref="o14">
+            <itemPosition posX="528" posY="2302" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p53" idref="o15">
+            <itemPosition posX="520" posY="2456" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p54" idref="g1"/>
+        <position id="p55" idref="c4">
+            <itemPosition posX="890" posY="672" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p56" idref="q11">
+            <itemPosition posX="203" posY="1725" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p57" idref="o16">
+            <itemPosition posX="536" posY="1591" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p58" idref="q12">
+            <itemPosition posX="342" posY="1597" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p59" idref="q13">
+            <itemPosition posX="342" posY="1739" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p60" idref="q14">
+            <itemPosition posX="343" posY="1986" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p61" idref="o17">
+            <itemPosition posX="537" posY="1658" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p62" idref="o18">
+            <itemPosition posX="539" posY="1732" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p63" idref="o19">
+            <itemPosition posX="528" posY="2043" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p64" idref="o20">
+            <itemPosition posX="531" posY="2109" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p65" idref="o21">
+            <itemPosition posX="527" posY="1898" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p66" idref="o22">
+            <itemPosition posX="530" posY="1972" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p67" idref="o23">
+            <itemPosition posX="534" posY="1812" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p68" idref="c5">
+            <itemPosition posX="883" posY="758" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p69" idref="c6">
+            <itemPosition posX="883" posY="859" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p70" idref="c7">
+            <itemPosition posX="883" posY="954" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p71" idref="c8">
+            <itemPosition posX="904" posY="1086" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p72" idref="c9"/>
+        <position id="p73" idref="o24">
+            <itemPosition posX="527" posY="2188" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p74" idref="c10">
+            <itemPosition posX="911" posY="2015" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p75" idref="c11">
+            <itemPosition posX="902" posY="1237" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p76" idref="c12">
+            <itemPosition posX="901" posY="1377" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p77" idref="c13"/>
+        <position id="p78" idref="o25">
+            <itemPosition posX="538" posY="1417" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p79" idref="o26">
+            <itemPosition posX="533" posY="1514" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p80" idref="c14"/>
+        <position id="p81" idref="f24">
+            <itemPosition posX="1354" posY="1711" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p82" idref="c15">
+            <itemPosition posX="896" posY="1713" width="60" height="60"
+                session="s3" selected="false"/>
+        </position>
+        <position id="p83" idref="c16"/>
     </nodes>
     <links>
         <link id="l1">
+            <itemLink from="p4" to="p5" value="6" session="s3"/>
             <itemLink from="p4" to="p5" value="6" session="s2"/>
             <itemLink from="p4" to="p5" value="6" session="s1"/>
         </link>
         <link id="l2">
+            <itemLink from="p4" to="p6" value="6" session="s3"/>
             <itemLink from="p4" to="p6" value="6" session="s2"/>
             <itemLink from="p4" to="p6" value="6" session="s1"/>
         </link>
         <link id="l3">
+            <itemLink from="p4" to="p7" value="6" session="s3"/>
             <itemLink from="p4" to="p7" value="6" session="s2"/>
             <itemLink from="p4" to="p7" value="6" session="s1"/>
         </link>
         <link id="l4">
+            <itemLink from="p4" to="p8" value="6" session="s3"/>
             <itemLink from="p4" to="p8" value="6" session="s2"/>
             <itemLink from="p4" to="p8" value="6" session="s1"/>
         </link>
         <link id="l5">
+            <itemLink from="p4" to="p9" value="6" session="s3"/>
             <itemLink from="p4" to="p9" value="6" session="s2"/>
             <itemLink from="p4" to="p9" value="6" session="s1"/>
         </link>
         <link id="l6">
+            <itemLink from="p10" to="p11" value="6" session="s3"/>
             <itemLink from="p10" to="p11" value="6" session="s2"/>
             <itemLink from="p10" to="p11" value="6" session="s1"/>
         </link>
         <link id="l7">
+            <itemLink from="p10" to="p12" value="6" session="s3"/>
             <itemLink from="p10" to="p12" value="6" session="s2"/>
             <itemLink from="p10" to="p12" value="6" session="s1"/>
         </link>
         <link id="l8">
+            <itemLink from="p10" to="p13" value="6" session="s3"/>
             <itemLink from="p10" to="p13" value="6" session="s2"/>
             <itemLink from="p10" to="p13" value="6" session="s1"/>
         </link>
         <link id="l9">
+            <itemLink from="p10" to="p14" value="6" session="s3"/>
             <itemLink from="p10" to="p14" value="6" session="s2"/>
             <itemLink from="p10" to="p14" value="6" session="s1"/>
         </link>
         <link id="l10">
+            <itemLink from="p10" to="p15" value="6" session="s3"/>
             <itemLink from="p10" to="p15" value="6" session="s2"/>
             <itemLink from="p10" to="p15" value="6" session="s1"/>
         </link>
         <link id="l11">
+            <itemLink from="p10" to="p16" value="6" session="s3"/>
             <itemLink from="p10" to="p16" value="6" session="s2"/>
             <itemLink from="p10" to="p16" value="6" session="s1"/>
         </link>
         <link id="l12">
+            <itemLink from="p18" to="p19" value="6" session="s3"/>
             <itemLink from="p18" to="p19" value="6" session="s2"/>
             <itemLink from="p18" to="p19" value="6" session="s1"/>
         </link>
         <link id="l13">
+            <itemLink from="p18" to="p20" value="6" session="s3"/>
             <itemLink from="p18" to="p20" value="6" session="s2"/>
             <itemLink from="p18" to="p20" value="6" session="s1"/>
         </link>
         <link id="l14">
+            <itemLink from="p18" to="p22" value="6" session="s3"/>
             <itemLink from="p18" to="p22" value="6" session="s2"/>
             <itemLink from="p18" to="p22" value="6" session="s1"/>
         </link>
         <link id="l15"/>
         <link id="l16">
+            <itemLink from="p17" to="p20" value="6" session="s3"/>
             <itemLink from="p17" to="p20" value="6" session="s2"/>
             <itemLink from="p17" to="p20" value="6" session="s1"/>
         </link>
         <link id="l17">
+            <itemLink from="p17" to="p22" value="6" session="s3"/>
             <itemLink from="p17" to="p22" value="6" session="s2"/>
             <itemLink from="p17" to="p22" value="6" session="s1"/>
         </link>
         <link id="l18">
+            <itemLink from="p17" to="p23" value="6" session="s3"/>
             <itemLink from="p17" to="p23" value="6" session="s2"/>
             <itemLink from="p17" to="p23" value="6" session="s1"/>
         </link>
         <link id="l19">
+            <itemLink from="p17" to="p21" value="6" session="s3"/>
             <itemLink from="p17" to="p21" value="6" session="s2"/>
             <itemLink from="p17" to="p21" value="6" session="s1"/>
         </link>
         <link id="l20">
+            <itemLink from="p17" to="p24" value="6" session="s3"/>
             <itemLink from="p17" to="p24" value="6" session="s2"/>
             <itemLink from="p17" to="p24" value="6" session="s1"/>
         </link>
         <link id="l21"/>
         <link id="l22"/>
         <link id="l23">
+            <itemLink from="p28" to="p29" value="0" session="s3"/>
             <itemLink from="p28" to="p29" value="0" session="s2"/>
         </link>
         <link id="l24">
+            <itemLink from="p28" to="p30" value="0" session="s3"/>
             <itemLink from="p28" to="p30" value="0" session="s2"/>
         </link>
         <link id="l25">
+            <itemLink from="p28" to="p31" value="0" session="s3"/>
             <itemLink from="p28" to="p31" value="0" session="s2"/>
         </link>
         <link id="l26"/>
         <link id="l27">
+            <itemLink from="p32" to="p33" value="0" session="s3"/>
             <itemLink from="p32" to="p33" value="0" session="s2"/>
         </link>
         <link id="l28">
+            <itemLink from="p32" to="p34" value="0" session="s3"/>
             <itemLink from="p32" to="p34" value="0" session="s2"/>
         </link>
         <link id="l29">
+            <itemLink from="p35" to="p36" value="0" session="s3"/>
             <itemLink from="p35" to="p36" value="0" session="s2"/>
         </link>
         <link id="l30">
+            <itemLink from="p35" to="p37" value="0" session="s3"/>
             <itemLink from="p35" to="p37" value="0" session="s2"/>
         </link>
         <link id="l31">
+            <itemLink from="p35" to="p38" value="0" session="s3"/>
             <itemLink from="p35" to="p38" value="0" session="s2"/>
         </link>
         <link id="l32">
+            <itemLink from="p28" to="p41" value="0" session="s3"/>
             <itemLink from="p28" to="p41" value="0" session="s2"/>
         </link>
         <link id="l33">
+            <itemLink from="p39" to="p40" value="0" session="s3"/>
             <itemLink from="p39" to="p40" value="0" session="s2"/>
         </link>
         <link id="l34">
+            <itemLink from="p39" to="p42" value="0" session="s3">
+                <breakPoint link="full">
+                    <breakPointItem xPoint="280.0" yPoint="1474.0"/>
+                    <breakPointItem xPoint="570.0" yPoint="1517.0"/>
+                </breakPoint>
+            </itemLink>
             <itemLink from="p39" to="p42" value="0" session="s2">
                 <breakPoint link="full">
                     <breakPointItem xPoint="280.0" yPoint="1474.0"/>
@@ -526,15 +923,19 @@
             </itemLink>
         </link>
         <link id="l35">
+            <itemLink from="p49" to="p32" value="6" session="s3"/>
             <itemLink from="p49" to="p32" value="6" session="s2"/>
         </link>
         <link id="l36">
+            <itemLink from="p49" to="p39" value="6" session="s3"/>
             <itemLink from="p49" to="p39" value="6" session="s2"/>
         </link>
         <link id="l37">
+            <itemLink from="p50" to="p28" value="6" session="s3"/>
             <itemLink from="p50" to="p28" value="6" session="s2"/>
         </link>
         <link id="l38">
+            <itemLink from="p50" to="p35" value="6" session="s3"/>
             <itemLink from="p50" to="p35" value="6" session="s2"/>
         </link>
         <link id="l39">
@@ -612,6 +1013,200 @@
         <link id="l59"/>
         <link id="l60"/>
         <link id="l61"/>
+        <link id="l62"/>
+        <link id="l63"/>
+        <link id="l64"/>
+        <link id="l65"/>
+        <link id="l66"/>
+        <link id="l67"/>
+        <link id="l68">
+            <itemLink from="p51" to="p52" value="0" session="s3"/>
+        </link>
+        <link id="l69">
+            <itemLink from="p51" to="p53" value="0" session="s3"/>
+        </link>
+        <link id="l70">
+            <itemLink from="p56" to="p58" value="6" session="s3"/>
+        </link>
+        <link id="l71">
+            <itemLink from="p56" to="p59" value="6" session="s3"/>
+        </link>
+        <link id="l72">
+            <itemLink from="p56" to="p60" value="6" session="s3"/>
+        </link>
+        <link id="l73">
+            <itemLink from="p58" to="p57" value="0" session="s3"/>
+        </link>
+        <link id="l74">
+            <itemLink from="p58" to="p61" value="0" session="s3"/>
+        </link>
+        <link id="l75">
+            <itemLink from="p59" to="p62" value="0" session="s3"/>
+        </link>
+        <link id="l76">
+            <itemLink from="p60" to="p64" value="0" session="s3"/>
+        </link>
+        <link id="l77">
+            <itemLink from="p60" to="p65" value="0" session="s3"/>
+        </link>
+        <link id="l78">
+            <itemLink from="p60" to="p66" value="0" session="s3"/>
+        </link>
+        <link id="l79">
+            <itemLink from="p60" to="p63" value="0" session="s3"/>
+        </link>
+        <link id="l80">
+            <itemLink from="p59" to="p67" value="0" session="s3"/>
+        </link>
+        <link id="l81">
+            <itemLink from="p60" to="p73" value="0" session="s3"/>
+        </link>
+        <link id="l82"/>
+        <link id="l83"/>
+        <link id="l84">
+            <itemLink from="p39" to="p78" value="0" session="s3"/>
+        </link>
+        <link id="l85">
+            <itemLink from="p39" to="p79" value="0" session="s3"/>
+        </link>
+        <link id="l86"/>
+        <link id="l87"/>
+        <link id="l88"/>
+        <link id="l89"/>
+        <link id="l90"/>
+        <link id="l91">
+            <itemLink from="p34" to="p71" value="3" session="s3">
+                <blackBox posX="752" posY="1117" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l92">
+            <itemLink from="p33" to="p71" value="3" session="s3">
+                <blackBox posX="752" posY="1164" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l93">
+            <itemLink from="p40" to="p75" value="3" session="s3">
+                <blackBox posX="751" posY="1282" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l94">
+            <itemLink from="p42" to="p75" value="3" session="s3">
+                <blackBox posX="751" posY="1316" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l95">
+            <itemLink from="p78" to="p75" value="3" session="s3">
+                <blackBox posX="750" posY="1357" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l96">
+            <itemLink from="p79" to="p75" value="3" session="s3">
+                <blackBox posX="747" posY="1405" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l97">
+            <itemLink from="p57" to="p76" value="3" session="s3">
+                <blackBox posX="749" posY="1514" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l98">
+            <itemLink from="p61" to="p76" value="3" session="s3">
+                <blackBox posX="749" posY="1548" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l99">
+            <itemLink from="p73" to="p74" value="3" session="s3">
+                <blackBox posX="749" posY="2131" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l100"/>
+        <link id="l101">
+            <itemLink from="p65" to="p82" value="3" session="s3">
+                <blackBox posX="741" posY="1835" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l102">
+            <itemLink from="p66" to="p82" value="3" session="s3">
+                <blackBox posX="743" posY="1873" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l103">
+            <itemLink from="p63" to="p82" value="3" session="s3">
+                <blackBox posX="742" posY="1908" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l104">
+            <itemLink from="p36" to="p70" value="3" session="s3">
+                <blackBox posX="741" posY="849" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l105">
+            <itemLink from="p37" to="p70" value="3" session="s3">
+                <blackBox posX="741" posY="898" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l106">
+            <itemLink from="p38" to="p70" value="3" session="s3">
+                <blackBox posX="741" posY="951" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l107">
+            <itemLink from="p41" to="p48" value="3" session="s3">
+                <blackBox posX="745" posY="590" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l108">
+            <itemLink from="p41" to="p44" value="3" session="s3">
+                <blackBox posX="741" posY="533" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l109">
+            <itemLink from="p41" to="p45" value="3" session="s3">
+                <blackBox posX="742" posY="475" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l110">
+            <itemLink from="p30" to="p45" value="3" session="s3">
+                <blackBox posX="742" posY="384" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l111">
+            <itemLink from="p29" to="p45" value="3" session="s3">
+                <blackBox posX="742" posY="333" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l112">
+            <itemLink from="p29" to="p44" value="3" session="s3">
+                <blackBox posX="741" posY="391" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l113">
+            <itemLink from="p29" to="p48" value="3" session="s3">
+                <blackBox posX="745" posY="448" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l114">
+            <itemLink from="p30" to="p44" value="3" session="s3">
+                <blackBox posX="741" posY="441" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l115">
+            <itemLink from="p30" to="p48" value="3" session="s3">
+                <blackBox posX="745" posY="498" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l116">
+            <itemLink from="p31" to="p48" value="3" session="s3">
+                <blackBox posX="745" posY="544" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l117">
+            <itemLink from="p31" to="p45" value="3" session="s3">
+                <blackBox posX="742" posY="429" width="5" height="5"/>
+            </itemLink>
+        </link>
+        <link id="l118"/>
+        <link id="l119"/>
     </links>
     <authors>
         <author id="a1" name="Quentin"/>
