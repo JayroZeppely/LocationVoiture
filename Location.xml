@@ -319,8 +319,38 @@
             <scenario id="e3"/>
             <argument id="g1"/>
             <argument id="g2">
-                <itemArgument label="A_2" session="s4"/>
                 <itemArgument label="A_2" session="s3"/>
+            </argument>
+            <argument id="g3">
+                <itemArgument label="Les résultats seront plus précis" session="s4"/>
+            </argument>
+            <argument id="g4">
+                <itemArgument
+                    label="Il n'y pas d'actions à réaliser avant de lancer une recherche" session="s4"/>
+            </argument>
+            <argument id="g5">
+                <itemArgument
+                    label="Représentation courante pour parcourir des annonces" session="s4"/>
+            </argument>
+            <argument id="g6">
+                <itemArgument
+                    label="Représentation permettant d'afficher des informations complémentaire (lieu de location)" session="s4"/>
+            </argument>
+            <argument id="g7">
+                <itemArgument
+                    label="Nécéssite de l'utilisateur de connaître à l'avance beaucoup d'informations" session="s4"/>
+            </argument>
+            <argument id="g8">
+                <itemArgument
+                    label="L'utilisateur doit remplir manuellement les champs" session="s4"/>
+            </argument>
+            <argument id="g9">
+                <itemArgument
+                    label="Potentiellement besoin de changer les champs remplit" session="s4"/>
+            </argument>
+            <argument id="g10">
+                <itemArgument
+                    label="Nécéssite d'avoir accès à des données utilisateurs par défaut(géolocalisation)" session="s4"/>
             </argument>
             <factor id="f1"/>
             <factor id="f2"/>
@@ -738,7 +768,7 @@
                 session="s2" selected="false"/>
         </position>
         <position id="p36" idref="o8">
-            <itemPosition posX="540" posY="684" width="60" height="60"
+            <itemPosition posX="540" posY="699" width="60" height="60"
                 session="s4" selected="false"/>
             <itemPosition posX="540" posY="684" width="60" height="60"
                 session="s3" selected="false"/>
@@ -1031,8 +1061,6 @@
                 session="s3" selected="false"/>
         </position>
         <position id="p86" idref="g2">
-            <itemPosition posX="772" posY="1441" width="60" height="60"
-                session="s4" selected="false"/>
             <itemPosition posX="817" posY="1456" width="60" height="60"
                 session="s3" selected="false"/>
         </position>
@@ -1041,6 +1069,38 @@
         <position id="p89" idref="f26"/>
         <position id="p90" idref="o27"/>
         <position id="p91" idref="q15"/>
+        <position id="p92" idref="g3">
+            <itemPosition posX="351" posY="629" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
+        <position id="p93" idref="g4">
+            <itemPosition posX="407" posY="123" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
+        <position id="p94" idref="g5">
+            <itemPosition posX="345" posY="1283" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
+        <position id="p95" idref="g6">
+            <itemPosition posX="278" posY="1028" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
+        <position id="p96" idref="g7">
+            <itemPosition posX="352" posY="545" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
+        <position id="p97" idref="g8">
+            <itemPosition posX="663" posY="620" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
+        <position id="p98" idref="g9">
+            <itemPosition posX="366" posY="957" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
+        <position id="p99" idref="g10">
+            <itemPosition posX="281" posY="929" width="60" height="60"
+                session="s4" selected="false"/>
+        </position>
     </nodes>
     <links>
         <link id="l1">
@@ -1734,6 +1794,30 @@
         <link id="l160"/>
         <link id="l161"/>
         <link id="l162"/>
+        <link id="l163">
+            <itemLink from="p41" to="p92" value="7" session="s4"/>
+        </link>
+        <link id="l164">
+            <itemLink from="p29" to="p93" value="7" session="s4"/>
+        </link>
+        <link id="l165">
+            <itemLink from="p33" to="p94" value="7" session="s4"/>
+        </link>
+        <link id="l166">
+            <itemLink from="p34" to="p95" value="7" session="s4"/>
+        </link>
+        <link id="l167">
+            <itemLink from="p41" to="p96" value="7" session="s4"/>
+        </link>
+        <link id="l168">
+            <itemLink from="p36" to="p97" value="7" session="s4"/>
+        </link>
+        <link id="l169">
+            <itemLink from="p38" to="p98" value="7" session="s4"/>
+        </link>
+        <link id="l170">
+            <itemLink from="p38" to="p99" value="7" session="s4"/>
+        </link>
     </links>
     <authors>
         <author id="a1" name="Quentin"/>
