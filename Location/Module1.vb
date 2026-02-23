@@ -7,6 +7,22 @@
     Public WithEvents Reservation As New Reservation
 
     Public Sub Main()
+        Recherche.voiture.Checked = False
+        Recherche.utilitaire.Checked = False
+        Recherche.location_multiple.Checked = False
+        Recherche.TrackBar_distance.Value = 0
+        Recherche.label_distance.Text = "0 km"
+        Recherche.prix_min.Text = ""
+        Recherche.prix_max.Text = ""
+        Recherche.gps.Checked = False
+        Recherche.climatisation.Checked = False
+        Recherche.regulateur.Checked = False
+        Recherche.porte_velos.Checked = False
+        Recherche.manuelle.Checked = True
+        Recherche.automatique.Checked = False
+        Recherche.place_min.Value = 4
+        Recherche.place_max.Value = 5
+
         etat = "Recherche"
         Recherche.Show()
         Parcours.Hide()
@@ -18,14 +34,17 @@
             Case "Recherche"
                 If Recherche.adresse_depart.Text <> "" AndAlso Recherche.date_debut_recherche.Value <= Recherche.date_retour_recherche.Value Then
                     etat = "Parcours"
+
                     Recherche.Hide()
                     Parcours.Show()
                     Reservation.Hide()
+
+
                 Else
                     etat = "Recherche"
                 End If
             Case "Adv_Recherche"
-                If Recherche.adresse_depart.Text <> "" Then
+                If Recherche.adresse_depart.Text <> "" AndAlso Recherche.date_debut_recherche.Value <= Recherche.date_retour_recherche.Value Then
                     etat = "Parcours"
                     Recherche.Hide()
                     Parcours.Show()
@@ -143,6 +162,24 @@
                     Recherche.Show()
                     Parcours.Hide()
                     Reservation.Hide()
+
+                    Recherche.Label_options.Text = "Options avancées 
+             ▼"
+                    Recherche.voiture.Checked = False
+                    Recherche.utilitaire.Checked = False
+                    Recherche.location_multiple.Checked = False
+                    Recherche.TrackBar_distance.Value = 0
+                    Recherche.label_distance.Text = "0 km"
+                    Recherche.prix_min.Text = ""
+                    Recherche.prix_max.Text = ""
+                    Recherche.gps.Checked = False
+                    Recherche.climatisation.Checked = False
+                    Recherche.regulateur.Checked = False
+                    Recherche.porte_velos.Checked = False
+                    Recherche.manuelle.Checked = False
+                    Recherche.automatique.Checked = False
+                    Recherche.place_min.Value = 4
+                    Recherche.place_max.Value = 5
                 Else
                     etat = "Reservation"
                 End If

@@ -203,6 +203,7 @@ Partial Class Recherche
         Me.place_max.Name = "place_max"
         Me.place_max.Size = New System.Drawing.Size(40, 20)
         Me.place_max.TabIndex = 29
+        Me.place_max.Value = New Decimal(New Integer() {5, 0, 0, 0})
         '
         'place_min
         '
@@ -210,6 +211,7 @@ Partial Class Recherche
         Me.place_min.Name = "place_min"
         Me.place_min.Size = New System.Drawing.Size(40, 20)
         Me.place_min.TabIndex = 28
+        Me.place_min.Value = New Decimal(New Integer() {4, 0, 0, 0})
         '
         'Label_pix_max
         '
