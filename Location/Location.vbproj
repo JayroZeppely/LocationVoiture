@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -111,17 +111,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Init.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Init.Designer.vb">
-      <DependentUpon>Init.vb</DependentUpon>
+    <Compile Include="Recherche.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Recherche.Designer.vb">
       <DependentUpon>Recherche.vb</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Recherche.vb">
+    <Compile Include="Parcours.Designer.vb">
+      <DependentUpon>Parcours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parcours.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -141,6 +141,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Reservation.Designer.vb">
+      <DependentUpon>Reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SplashScreen1.Designer.vb">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
     </Compile>
@@ -149,8 +155,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Init.resx">
-      <DependentUpon>Init.vb</DependentUpon>
+    <EmbeddedResource Include="Recherche.resx">
+      <DependentUpon>Recherche.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -158,8 +164,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Recherche.resx">
-      <DependentUpon>Recherche.vb</DependentUpon>
+    <EmbeddedResource Include="Parcours.resx">
+      <DependentUpon>Parcours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservation.resx">
+      <DependentUpon>Reservation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
@@ -177,6 +186,15 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\picture_placeholder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Capture2.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
