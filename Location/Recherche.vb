@@ -11,7 +11,7 @@
         RaiseEvent LancerRecherche()
     End Sub
 
-    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles date_retour_recherche.ValueChanged
 
     End Sub
 

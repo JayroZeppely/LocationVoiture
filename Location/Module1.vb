@@ -16,7 +16,7 @@
     Private Sub C1() Handles Recherche.LancerRecherche
         Select Case etat
             Case "Recherche"
-                If Recherche.adresse_depart.Text <> "" Then
+                If Recherche.adresse_depart.Text <> "" AndAlso Recherche.date_debut_recherche.Value <= Recherche.date_retour_recherche.Value Then
                     etat = "Parcours"
                     Recherche.Hide()
                     Parcours.Show()

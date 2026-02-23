@@ -23,8 +23,8 @@ Partial Class Recherche
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Btn_search = New System.Windows.Forms.Button()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.date_retour_recherche = New System.Windows.Forms.DateTimePicker()
+        Me.date_debut_recherche = New System.Windows.Forms.DateTimePicker()
         Me.main_title_init = New System.Windows.Forms.Label()
         Me.adresse_depart = New System.Windows.Forms.TextBox()
         Me.adresse_retour = New System.Windows.Forms.TextBox()
@@ -75,19 +75,19 @@ Partial Class Recherche
         Me.Btn_search.Text = "Lancer la recherche"
         Me.Btn_search.UseVisualStyleBackColor = True
         '
-        'DateTimePicker1
+        'date_retour_recherche
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(392, 215)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 1
+        Me.date_retour_recherche.Location = New System.Drawing.Point(392, 215)
+        Me.date_retour_recherche.Name = "date_retour_recherche"
+        Me.date_retour_recherche.Size = New System.Drawing.Size(200, 20)
+        Me.date_retour_recherche.TabIndex = 1
         '
-        'DateTimePicker2
+        'date_debut_recherche
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(137, 215)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker2.TabIndex = 2
+        Me.date_debut_recherche.Location = New System.Drawing.Point(137, 215)
+        Me.date_debut_recherche.Name = "date_debut_recherche"
+        Me.date_debut_recherche.Size = New System.Drawing.Size(200, 20)
+        Me.date_debut_recherche.TabIndex = 2
         '
         'main_title_init
         '
@@ -457,8 +457,8 @@ Partial Class Recherche
         Me.Controls.Add(Me.adresse_retour)
         Me.Controls.Add(Me.adresse_depart)
         Me.Controls.Add(Me.main_title_init)
-        Me.Controls.Add(Me.DateTimePicker2)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.date_debut_recherche)
+        Me.Controls.Add(Me.date_retour_recherche)
         Me.Controls.Add(Me.Btn_search)
         Me.Name = "Recherche"
         Me.Text = "Recherche"
@@ -473,8 +473,8 @@ Partial Class Recherche
     End Sub
 
     Friend WithEvents Btn_search As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents date_retour_recherche As DateTimePicker
+    Friend WithEvents date_debut_recherche As DateTimePicker
     Friend WithEvents main_title_init As Label
     Friend WithEvents adresse_depart As TextBox
     Friend WithEvents adresse_retour As TextBox
