@@ -344,9 +344,9 @@ Partial Class Recherche
         Me.label_distance.AutoSize = True
         Me.label_distance.Location = New System.Drawing.Point(265, 149)
         Me.label_distance.Name = "label_distance"
-        Me.label_distance.Size = New System.Drawing.Size(39, 13)
+        Me.label_distance.Size = New System.Drawing.Size(30, 13)
         Me.label_distance.TabIndex = 13
-        Me.label_distance.Text = "Label2"
+        Me.label_distance.Text = "0 km"
         '
         'distance
         '
@@ -362,9 +362,11 @@ Partial Class Recherche
         '
         Me.TrackBar_distance.Cursor = System.Windows.Forms.Cursors.Hand
         Me.TrackBar_distance.Location = New System.Drawing.Point(25, 149)
+        Me.TrackBar_distance.Maximum = 100
         Me.TrackBar_distance.Name = "TrackBar_distance"
         Me.TrackBar_distance.Size = New System.Drawing.Size(233, 45)
         Me.TrackBar_distance.TabIndex = 11
+        Me.TrackBar_distance.TickFrequency = 5
         '
         'caracteristiques
         '

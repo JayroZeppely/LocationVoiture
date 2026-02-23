@@ -41,4 +41,8 @@
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
+
+    Private Sub TrackBar_distance_Scroll(sender As Object, e As EventArgs) Handles TrackBar_distance.Scroll
+        label_distance.Text = TrackBar_distance.Value.ToString() + " km"
+    End Sub
 End Class

@@ -34,4 +34,8 @@
     Private Sub Label_options_Click(sender As Object, e As EventArgs) Handles Label_options.Click
         RaiseEvent AdvancedOptions()
     End Sub
+
+    Private Sub TrackBar_distance_Scroll(sender As Object, e As EventArgs) Handles TrackBar_distance.Scroll
+        label_distance.Text = TrackBar_distance.Value.ToString() + " km"
+    End Sub
 End Class
